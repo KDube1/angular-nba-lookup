@@ -1,0 +1,17 @@
+<p>
+    <mat-form-field appearance="outline">
+      <mat-label>Enter player name</mat-label>
+      <input 
+      matInput
+      [(ngModel)] = "name"
+      >
+      <mat-hint>First or last name</mat-hint>
+    </mat-form-field>
+    <button (click)="onSubmit()" class="search" mat-flat-button color="primary">Search</button>
+  </p>
+
+  <app-player-card
+    *ngFor ="let player of players"
+    [player]="player"  
+  >
+</app-player-card>

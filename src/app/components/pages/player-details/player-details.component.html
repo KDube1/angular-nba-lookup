@@ -1,0 +1,16 @@
+<div class="player-details">
+        <h1>Details of Player ID: {{player.id}}</h1>
+        <mat-card>
+            <mat-card-title>{{player.first_name}} {{player.last_name}}</mat-card-title>
+            <mat-card-subtitle>Team: {{player.team.city}} {{player.team.name}}</mat-card-subtitle>
+            <mat-card-content>
+                <h3>Position: {{player.position==='' ? "unavailable" : player.position}}</h3>
+                <h3>Height: {{player.height_feet=== null ? "unavailable" : player.height_feet + "'" + player.height_inches + '"'}}</h3>
+                <h3>Weight: {{player.weight_pounds===null ? "unavailable" : player.weight_pounds + " lbs"}}</h3>
+            </mat-card-content>
+        </mat-card>
+
+        <app-back-button></app-back-button>
+
+</div>
+

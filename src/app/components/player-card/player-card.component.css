@@ -1,4 +1,18 @@
 .player{
-    padding:10px;
+    padding:4px;
     width:30em;
+}
+
+
+.player-card{
+    color:rgb(105, 102, 102);
+    
+}
+
+a:link {
+    text-decoration: none;
+  }
+
+.player-card:hover{
+    color:rgb(0, 0, 0);
 }

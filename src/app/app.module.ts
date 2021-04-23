@@ -20,6 +20,8 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatCardModule} from '@angular/material/card';
 import { AboutComponent } from './components/pages/about/about.component';
+import { PlayerDetailsComponent } from './components/pages/player-details/player-details.component';
+import { BackButtonComponent } from './components/layout/back-button/back-button.component';
 
 
 
@@ -30,7 +32,9 @@ import { AboutComponent } from './components/pages/about/about.component';
     HomeComponent,
     SearchPlayerComponent,
     PlayerCardComponent,
-    AboutComponent
+    AboutComponent,
+    PlayerDetailsComponent,
+    BackButtonComponent
   ],
   imports: [
     BrowserModule,

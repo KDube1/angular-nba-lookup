@@ -21,10 +21,12 @@ export class SearchPlayerComponent implements OnInit {
   ngOnInit(): void {
   }
 
+
+
   onSubmit(): void {
     this.playerService.getPlayers(this.name).subscribe(response =>{
       this.players = response.data;
-      console.log(this.players);
+     
     })
    
   }

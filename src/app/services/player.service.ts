@@ -17,4 +17,10 @@ export class PlayerService {
     const url = `${this.apiUrl}&search=${name}`
     return this.http.get<any>(url);
   }
+
+  //Get Player from ID
+  getPlayerFromID(id:string):Observable<any>{
+    const url = `https://www.balldontlie.io/api/v1/players/${id}`
+    return this.http.get<any>(url);
+  }
 }
